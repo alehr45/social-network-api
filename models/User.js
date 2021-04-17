@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const User = model('User', UserSchema);
+
 
 const UserSchema = new Schema({
     userName: {
@@ -19,9 +19,9 @@ const UserSchema = new Schema({
     },
     friends: {
       type: String,
-    },
-    toppings: []
+    }
   });
   
+  const User = model('User', UserSchema);
 
   module.exports = User;
