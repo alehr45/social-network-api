@@ -3,6 +3,7 @@ const { Thought } = require('../models');
 const thoughtController = {
     getAllThought(req, res) {
         Thought.find({})
+        .populate({ path: 'reactions' })
           .then(dbUserData => res.json(dbUserData))
           .catch(err => {
             console.log(err);
@@ -13,6 +14,7 @@ const thoughtController = {
       // get one pizza by id
       getThoughtById({ params }, res) {
         Thought.findOne({ _id: params.id })
+        .populate({ path: 'reactions' })
           .then(dbThoughtData => {
             // If no pizza is found, send 404
             if (!dbThoughtData) {
