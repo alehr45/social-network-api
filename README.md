@@ -22,7 +22,10 @@ social-network-api
 A REST API for a social media app. Built with Express, Mongoose, and MongoDB.
 
 ### **Installation**  
-Install MongoDB on your computer. Clone the repository. Install dependencies with `npm i`.  Run `npm start` in the root directory to start the server. Use Insomnia Core to test routes.
+##### Install MongoDB on your computer. Clone the repository. 
+##### Install dependencies with `npm i`.  
+##### Run `npm start` in the root directory to start the server. 
+##### Use Insomnia Core to test routes.
 
 ### **Usage**  
 Used for a backend to a social media website or application.
