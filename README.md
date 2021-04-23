@@ -13,6 +13,8 @@
 
 ========================
 
+![Alt text](/screenshot.png?raw=true "Optional Title")
+
 ### **Repository Name**  
 social-network-api
 
